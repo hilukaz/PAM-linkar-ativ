@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/primeiro">
+
+    <fragment
+        android:id="@+id/primeiro"
+        android:name="com.example.href.Primeiro"
+        android:label="fragment_primeiro"
+        tools:layout="@layout/fragment_primeiro" >
+        <action
+            android:id="@+id/action_primeiro_to_segundo"
+            app:destination="@id/segundo" />
+        <action
+            android:id="@+id/action_primeiro_to_terceiro"
+            app:destination="@id/terceiro" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundo"
+        android:name="com.example.href.Segundo"
+        android:label="fragment_segundo"
+        tools:layout="@layout/fragment_segundo" >
+        <action
+            android:id="@+id/action_segundo_to_quarto"
+            app:destination="@id/quarto" />
+    </fragment>
+    <fragment
+        android:id="@+id/terceiro"
+        android:name="com.example.href.Terceiro"
+        android:label="fragment_terceiro"
+        tools:layout="@layout/fragment_terceiro" >
+        <action
+            android:id="@+id/action_terceiro_to_quinto"
+            app:destination="@id/quinto" />
+    </fragment>
+    <fragment
+        android:id="@+id/quarto"
+        android:name="com.example.href.Quarto"
+        android:label="fragment_quarto"
+        tools:layout="@layout/fragment_quarto" >
+        <action
+            android:id="@+id/action_quarto_to_sexto"
+            app:destination="@id/sexto" />
+    </fragment>
+    <fragment
+        android:id="@+id/quinto"
+        android:name="com.example.href.Quinto"
+        android:label="fragment_quinto"
+        tools:layout="@layout/fragment_quinto" >
+        <action
+            android:id="@+id/action_quinto_to_sexto"
+            app:destination="@id/sexto" />
+    </fragment>
+    <fragment
+        android:id="@+id/sexto"
+        android:name="com.example.href.Sexto"
+        android:label="fragment_sexto"
+        tools:layout="@layout/fragment_sexto" >
+        <action
+            android:id="@+id/action_sexto_to_primeiro"
+            app:destination="@id/primeiro" />
+    </fragment>
+</navigation>
